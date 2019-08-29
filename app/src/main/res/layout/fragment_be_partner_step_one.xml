@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.StepOneFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomLayout">
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Select Language" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="English" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Hindi" />
+
+            </RadioGroup>
+
+
+                <EditText
+                    android:id="@+id/fullNameET"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:hint="Fullname"
+                    android:inputType="textCapWords"
+                    android:singleLine="true" />
+
+
+
+                <EditText
+                    android:id="@+id/mobileNumberET"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:hint="Phoneno"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:singleLine="true" />
+
+
+
+
+                <EditText
+                    android:id="@+id/alternateNumberET"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:hint="Alternate No"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:singleLine="true" />
+
+
+
+                <EditText
+                    android:id="@+id/emailET"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:hint="Email Optional"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="60"
+                    android:singleLine="true"
+                    android:textColor="#ff000000" />
+
+
+
+
+                <EditText
+                    android:id="@+id/ageET"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:hint="Age"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:singleLine="true"
+                    android:textColor="#ff000000" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:visibility="gone"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/backBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="120dp"
+            android:text="Back"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:id="@+id/nextBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="120dp"
+            android:text="Next"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

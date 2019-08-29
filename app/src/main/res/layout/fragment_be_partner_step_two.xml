@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.StepOneFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomLayout">
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+
+
+
+                <EditText
+                    android:id="@+id/currentAddressET"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:hint="Current Address"
+                    android:inputType="textCapWords"
+                    android:singleLine="true" />
+
+
+
+                <EditText
+                    android:id="@+id/permanentAddressET"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:hint="Permanent Address"
+                    android:inputType="textCapWords"
+                    android:maxLength="10"
+                    android:singleLine="true" />
+
+
+
+
+                <EditText
+                    android:id="@+id/dobET"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:hint="dob"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:singleLine="true" />
+
+
+
+
+                <EditText
+                    android:id="@+id/cityET"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:hint="City"
+                    android:inputType="textCapWords"
+                    android:maxLength="60"
+                    android:singleLine="true"
+                    android:textColor="#ff000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Driving Licence" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="I have" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="I need" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_alignParentLeft="true"
+            android:id="@+id/backBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="120dp"
+            android:text="Back"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:id="@+id/nextBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="120dp"
+            android:text="Next"
+            android:textColor="@android:color/white"  />
+
+    </RelativeLayout>
+
+</RelativeLayout>
